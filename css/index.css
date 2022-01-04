@@ -1,0 +1,262 @@
+* {
+  scroll-behavior: smooth;
+}
+.preloader {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  background: #fff;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+body {
+  width: 100%;
+  overflow-x: hidden;
+}
+.navbar-toggler {
+  position: fixed;
+  top: 2%;
+  right: 5%;
+  float: right !important;
+  background: rgb(212, 208, 208);
+}
+.navbar-collapse {
+  position: fixed;
+  top: 2%;
+  right: 4%;
+}
+.logoImg {
+  position: fixed;
+  top: 0%;
+  left: 4%;
+  z-index: 10000;
+  /* background-color: #fff; */
+  border-radius: 50%;
+  padding: 1rem;
+}
+
+.logoImg img {
+  width: 120px;
+}
+
+.tagLine {
+  position: absolute;
+  top: 24%;
+  background: -webkit-linear-gradient(75deg, #2539df, #52ad07);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.styleBtn {
+  display: inline-block;
+  padding: 0.6rem 1rem;
+  background: #52ad07;
+  font-size: 1rem;
+  border: none;
+  outline: none;
+  line-height: 1.3rem !important;
+  color: #fff !important;
+}
+.btn-shine {
+  /* position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); */
+  /* padding: 12px 48px; */
+  /* color: #fff; */
+  background: linear-gradient(to right, #4f5de0 0, #2539df 40%, #57bd04 60%);
+  background-position: 0;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 5s infinite linear;
+  animation-fill-mode: forwards;
+  -webkit-text-size-adjust: none;
+  font-weight: 600;
+  font-size: 3rem;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.aboutBg {
+  background: url(../Images/about_bg.png) no-repeat;
+  background-size: contain;
+  background-position: right;
+  box-shadow: 12px 12px 10px #00000052;
+}
+
+@-moz-keyframes shine {
+  0% {
+    background-position: 0;
+  }
+  60% {
+    background-position: 790px;
+  }
+  100% {
+    background-position: 790px;
+  }
+}
+@-webkit-keyframes shine {
+  0% {
+    background-position: 0;
+  }
+  60% {
+    background-position: 790px;
+  }
+  100% {
+    background-position: 790px;
+  }
+}
+@-o-keyframes shine {
+  0% {
+    background-position: 0;
+  }
+  60% {
+    background-position: 790px;
+  }
+  100% {
+    background-position: 790px;
+  }
+}
+@keyframes shine {
+  0% {
+    background-position: 0;
+  }
+  60% {
+    background-position: 790px;
+  }
+  100% {
+    background-position: 790px;
+  }
+}
+
+.background {
+  height: 100vh;
+  background: url(../Images/landing_bg.png);
+  background-position: top;
+  background-size: cover;
+  background-blend-mode: overlay;
+}
+/* nav {
+  background: transparent;
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  transition: all 0.3s;
+  margin: 0 0px !important;
+  padding: 0 0px !important;
+} */
+.nav-item {
+  margin: 0 15px;
+}
+.nav-item a:hover {
+  color: #479822 !important;
+}
+.navbar-brand {
+  font-weight: 700 !important;
+  font-size: 30px;
+  margin: 0 15px;
+  cursor: pointer;
+}
+
+.phone {
+  text-align: center;
+}
+
+.con h1 {
+  font-weight: 500;
+}
+.pink1 {
+  color: #000;
+}
+.pink {
+  color: #000;
+  /* font-size: 150%; */
+}
+.block {
+  font-weight: 500;
+}
+#menu img {
+  height: 261px;
+}
+#Expert img {
+  height: 310px;
+  width: 230px;
+}
+.background1 {
+  background: url(../Images/testimonial_bg.png), rgba(0, 0, 0, 0.295);
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  background-blend-mode: overlay;
+  height: 120vh;
+}
+
+.mail a {
+  text-decoration: none;
+  color: #000 !important;
+}
+@media only screen and (max-width: 412px) {
+  .background1 {
+    height: 290vh;
+    /*font-size: 20px;*/
+  }
+  .background {
+    height: 50vh;
+    background: url(../Images/landing_bg.png);
+    background-position: top;
+    background-size: cover;
+    background-blend-mode: overlay;
+  }
+  #Expert img {
+    height: 310px;
+    width: 250px;
+    margin: 0 5%;
+  }
+  #Expert p {
+    text-align: center;
+  }
+  .logoImg {
+    position: fixed;
+    top: 0%;
+    left: 4%;
+    z-index: 10;
+    /* background-color: #fff; */
+    border-radius: 50%;
+    padding: 1rem;
+  }
+  .logoImg img {
+    width: 80px;
+  }
+  .btn-shine {
+    font-size: 1rem;
+  }
+  .styleBtn {
+    transform: translateY(-200%);
+  }
+  .navbar-toggler {
+    background: transparent !important;
+  }
+  .fa-bars {
+    font-size: 1.4rem;
+  }
+  .navbar-nav {
+    transform: translateY(10%) !important;
+  }
+  .aboutBg {
+    background: none;
+    box-shadow: none;
+  }
+  .phone {
+    text-align: left;
+  }
+}
+@media only screen and (max-width: 1035px) {
+  .background1 {
+    /*font-size: 200%;*/
+  }
+}
